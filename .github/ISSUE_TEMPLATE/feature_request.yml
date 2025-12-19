@@ -7,8 +7,6 @@ assignees:
   - octocat
 
 body:
-
-
   - type: input
     id: contact
     attributes:

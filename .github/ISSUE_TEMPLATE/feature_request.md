@@ -5,6 +5,54 @@ title: ''
 labels: ''
 assignees: ''
 
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: What is your name?
+      placeholder: ex.Latcharit Srijai
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type request
+      description: Select the type of your request
+
+      options:
+        - New Feature
+        - New UI
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: What is the os which you want to suggest
+      placeholder: Selections
+      options:
+        - Windows
+        - Linux
+        - MacOs
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: whatdoyouwant
+    attributes:
+      label: What are the details of your suggestion
+      description: Explain what do you want
+      value: "Feature Details!"
+      validations:
+      required: true
 ---
 
 
