@@ -29,7 +29,7 @@ body:
       options:
         - New Feature
         - New UI
-      default: 0
+      default: New Feature  
     validations:
       required: true
 
@@ -42,7 +42,7 @@ body:
         - Windows
         - Linux
         - MacOs
-      default: 0
+      default: Windows  
     validations:
       required: true
 
@@ -51,7 +51,7 @@ body:
     attributes:
       label: What are the details of your suggestion
       description: Explain what do you want
-      value: "Feature Details!"
-      validations:
+      placeholder: "Please describe your feature suggestion"
+      value: ""  
+    validations:
       required: true
-
